@@ -1,14 +1,11 @@
-console.log(2 + 3)
+const express = require("express");
+const app = express();
 
-const nom = "Albert" // string
-let age = 18  // int
-let aLePermis = false // bool 
-let temperature = 12.3 //float
-const note = [12, 13, 14] // tableau 
-let voiture = {
-    couleur: "rouge",
-    siege: "cuir",
-    volant: "moumoute"
-}                      // object
+// Une route = une methode + un chemin + une fonction de reponse
+app.get("/", (req, res) => {
+  res.json({ message: "Bonjour" }); // Express pose l en-tete ET convertit en JSON
+});
 
-console.log(voiture.volant) 
+app.listen(3000, () => {
+  console.log("Serveur sur http://localhost:3000");
+});
