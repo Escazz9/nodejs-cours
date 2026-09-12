@@ -31,7 +31,7 @@ app.post("/produits", (req,res) => {
     return res.status(400).json({ erreur: "Données invalides" });
   }
   const nouveauProduit = {
-    id: produits.lenght + 1,
+    id: produits.length + 1,
     nom: nom,
     prix: prix
   };
@@ -53,9 +53,9 @@ app.get("/produits/:id", (req, res) => {
   res.json(produit);
 });
 
-req.body 
-
 
 app.listen(3000, () => {
   console.log("Serveur sur http://localhost:3000");
 });
+
+
