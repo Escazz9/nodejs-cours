@@ -22,5 +22,9 @@
   "homepage": "https://github.com/Sata6938/nodejs-cours#readme",
   "dependencies": {
     "express": "^5.2.1"
-  }
+  }, 
+  "nom": "Clavier",
+  "prix": 30,
+  "tags": ["azerty", "usb"]
+  
 }
